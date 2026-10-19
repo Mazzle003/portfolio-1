@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="text[62.5%]">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body id="body" class="bg-[#000] text-[#fff] min-h-screen relative scroll-smooth font-[Poppins]">
+
+    <main class="text-[12px] sm:text-[14px] leading-[1.7]">
+        <header class="bg-[#222222] flex justify-center sticky top-0 pl-[25px] pr-[25px]">
+            <div class="w-full sm:w-[800px] flex items-center justify-between">
+                <div>
+                    <img class="w-[100%]" src="/assets/images/logo.png" alt="logo" />
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex items-center list-none gap-[50px] font-[700]">
+                        <li class="hover:underline"><a href="#">Home</a></li>
+                        <li class="hover:underline"><a href="#projects">Projects</a></li>
+                        <li class="hover:underline"><a href="#experience">Experience</a></li>
+                        <li class="hover:underline"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <img id="openicon" onclick="openMenu()" class="md:hidden cursor-pointer" src="/assets/images/icon-hamburger.svg" alt="Menu Icon" />
+            </div>
+
+            <div id="blurredbg" onclick="closeMenu()"
+                class="hidden bg-black/20 fixed inset-0 w-full h-screen top-[0] left-[0] backdrop-blur-md z-[2] md:hidden"></div>
+            
+            <div id="sidebarnav" class="bg-[#191919] w-[50%] h-screen p-[20px] absolute top-[0] left-[0%] z-[5] hidden">
+                <div class="flex justify-end pt-[10px] mb-[20px] md:hidden">
+                    <img onclick="closeMenu()" class="cursor-pointer" src="/assets/images/icon-close.svg" alt="Menu Icon" />
+                </div>
+                <ul class="flex flex-col items-start list-none gap-[20px] font-[700]">
+                    <li onclick="closeMenu()" class="hover:underline"><a href="#">Home</a></li>
+                    <li onclick="closeMenu()" class="hover:underline"><a href="#projects">Project</a></li>
+                    <li onclick="closeMenu()" class="hover:underline"><a href="#experience">Experience</a></li>
+                    <li onclick="closeMenu()" class="hover:underline"><a href="#contact">Content</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="flex justify-center [30px] mt-[80px] mb-[80px] text-center pl-[25px] pr-[25px]">
+            <div class="w:full sm:w-[600px] flex flex-col justify-center">
+                <div class="flex justify-center mb-[30px]">
+                    <img class="w-[50%] bg-gradient-to-br from-[#FF6A00] via-[#EE0979] to-[#8A2BE2] pt-[10px] rounded-[100%]" src="/assets/images/Avatar.png" alt="portfolio image" />
+                </div>
+                
+                <div>
+                    <div>
+                        <h1 class="text-[30px]/none sm:text-[40px]/none font-bold mb-[30px]">I do code and <br> make content
+                            <span
+                                class="bg-gradient-to-br from-[#FF6A00] via-[#EE0979] to-[#8A2BE2] bg-clip-text text-transparent">about
+                                it!</span>
+                        </h1>
+                
+                        <p class="mb-[40px] text-[#C5C5C5] mb-[30px]">
+                            I am a seasoned full-stack software engineer with over
+                            8 years of professional experience, specializing in backend development.
+                            My expertise lies in crafting robust and scalable SaaS-based
+                            architectures on the Amazon AWS platform.
+                        </p>
+                
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-[10px] font-[700] sm:text-[16px]">
+                            <button class="w-full sm:w-[30%] cursor-pointer bg-[#FF6A00] sm:bg-[#fff] hover:bg-[#C5C5C5] text-[#fff] sm:text-[#000] pt-[10px] pb-[10px] pl-[20px] pr-[20px] rounded-[20px]">Get
+                                in Touch</button>
+                            <button class="w-full sm:w-[30%] cursor-pointer border-[2px] pt-[10px] pb-[10px] pl-[20px] pr-[20px] rounded-[20px]">Download
+                                CV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-[80px] flex justify-center pl-[25px] pr-[25px]">
+            <div class="sm:w-[800px]">
+                <div class="text-[20px] font-[600] text-center mb-[25px] tracking-[3px]">EXPERIENCE WITH</div>
+                <div class="flex items-center justify-center">
+                    <div class="flex flex-wrap sm:flex-nowrap sm:w-[500px] items-center justify-center gap-[20px] sm:gap-[50px]">
+                        <img class="w-[30px]" src="/assets/images/javascript.png" alt="Javascript Logo" />
+                        <img class="w-[30px]" src="/assets/images/nodejs.png" alt="Notejs Logo" />
+                        <img class="w-[30px]" src="/assets/images/html.png" alt="HTML Logo" />
+                        <img class="w-[30px]" src="/assets/images/css.png" alt="CSS Logo" />
+                        <img class="w-[30px]" src="/assets/images/reactjs.png" alt="React Logo" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-[80px] flex justify-center pl-[25px] pr-[35px]">
+            <div class="sm:w-[800px]">
+                <h2 class="bg-gradient-to-br from-[#FF8660] to-[#D5491D] bg-clip-text text-transparent text-[25px] text-center font-[800] mb-[25px] tracking-[3px]">PROJECTS</h2>
+                <div class="flex flex-col sm:flex-row items-center gap-[20px]">
+                    <div>
+                        <img src="/assets/images/project-thumbnail-1.png" alt="First Project" />
+                        <div class="bg-[#2A2A2A] flex items-center justify-between pl-[15px] pr-[15px] pt-[10px] pb-[10px] rounded-bl-[15px] rounded-br-[15px]">
+                            <span>
+                                <a class="text-[#C5C5C5] text-[12px] font-[700]" href="#">CLICK HERE TO VISIT</a>
+                                <p class="text-[16px] font-[800]">HTML TUTORIAL</p>
+                            </span>
+                            <span>
+                                <img class="cursor-pointer" src="/assets/images/View Icon.svg" alt="View Icon" />
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/assets/images/project-thumbnail-2.png" alt="First Project" />
+                        <div class="bg-[#2A2A2A] flex items-center justify-between pl-[15px] pr-[15px] pt-[10px] pb-[10px] rounded-bl-[15px] rounded-br-[15px]">
+                            <span>
+                                <a class="text-[#C5C5C5] text-[12px] font-[700]" href="#">CLICK HERE TO VISIT</a>
+                                <p class="text-[16px] font-[800]">CSS TUTORIAL</p>
+                            </span>
+                            <span>
+                                <img class="cursor-pointer" src="/assets/images/View Icon.svg" alt="View Icon" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-[80px] flex justify-center pl-[25px] pr-[25px]">
+            <div class="sm:w-[800px]">
+                <h2 class="bg-gradient-to-br from-[#5BADFF] to-[#1373D1] bg-clip-text text-transparent text-[35px] text-center font-[800] mb-[25px] tracking-[3px]">EXPERIENCE</h2>
+                <div class="text-[#8491A0]">
+                    <div class="mb-[20px]">
+                        <div class="sm:flex items-center gap-[10px] mb-[15px]">
+                            <img class="sm:w-[20px] mb-[15px]  sm:mb-[0]" src="/assets/images/google-logo.svg" alt="Apple Logo" />
+                            <div class="flex flex-col sm:flex-row flex-1 sm:items-center justify-between">
+                                <span class="text-[#fff] text-[16px] font-[700]">Lead Software Engineer at Google</span>
+                                <span class="text-[12px]">Nov 2019 - Present</span>
+                            </div>
+                        </div>
+                        <p>
+                            As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for
+                            Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of
+                            search accuracy and efficiency, optimizing user experiences for millions of users worldwide.
+                        </p>
+                    </div>
+
+                    <div class="mb-[20px]">
+                        <div class="sm:flex items-center gap-[10px] mb-[15px]">
+                            <img class="sm:w-[20px] mb-[15px] sm:mb-[0]" src="/assets/images/apple-logo.svg" alt="Meta Logo" />
+                            <div class="flex flex-col sm:flex-row flex-1 sm:items-center justify-between">
+                                <span class="text-[#fff] text-[16px] font-[700]">Junior Software Engineer at Apple</span>
+                                <span class="text-[12px]">Jan 2016 - Dec 2017</span>
+                            </div>
+                        </div>
+                        <p>
+                            During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture
+                            of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical
+                            leadership to a cross-functional team.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="sm:flex items-center gap-[10px] mb-[15px]">
+                            <img class="sm:w-[20px] mb-[15px] sm:mb-[0]" src="/assets/images/meta-logo.svg" alt="Google Logo" />
+                            <div class="flex flex-col sm:flex-row flex-1 sm:items-center justify-between">
+                                <span class="text-[#fff] text-[16px] font-[700]">Software Engineer at Meta</span>
+                                <span class="text-[12px]">Jan 2017 - Oct 2019</span>
+                            </div>
+                        </div>
+                        <p class="text-[#C5C5C5]">
+                            At Meta, I served as a Software Engineer, focusing on the design and implementation of backend systems for
+                            the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user
+                            engagement features, I leveraged my expertise to ensure seamless functionality and scalability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="bg-[#191919] pt-[80px] pb-[80px] flex justify-center pl-[25px] pr-[25px]">
+            <div class="sm:w-[800px]">
+                <div class="mb-[40px]">
+                    <span class="block mb-[20px] text-[15px] font-[800]">Contact</span>
+                    <p class="text-[#C5C5C5]">
+                        Seasoned Full Stack Software Engineer with over 8 years of hands-on experience in designing
+                        and implementing robust, scalable, and innovative web solutions. Adept at leveraging a
+                        comprehensive skill set encompassing front-end and back-end technologies.
+                    </p>
+                    <div class="flex items-center gap-[10px] mt-[15px]">
+                        <img src="/assets/images/Email Icon.svg" alt="Mail-icon" />
+                        <a href="mailto">abmcodehub@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-[10px]">
+                    <img class="w-[15px]" src="/assets/images/instagram.svg" alt="Instagram Icon" />
+                    <img class="w-[15px]" src="/assets/images/x.svg" alt="X Icon" />
+                    <img class="w-[15px]" src="/assets/images/youtube.svg" alt="Youtube Icon" />
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
